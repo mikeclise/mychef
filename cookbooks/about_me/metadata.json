@@ -1,31 +1,44 @@
 {
+  "version": "0.0.1",
+  "recipes": {
+    "about_me::default": "Prints my first name and several of my favorite things as output."
+  },
+  "maintainer": "Precor",
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "name": "about_me",
+  "maintainer_email": "mike.clise@precor.com",
+  "recommendations": {
+  },
+  "replacing": {
+  },
+  "conflicting": {
+  },
   "platforms": {
-  },
-  "groupings": {
-  },
-  "suggestions": {
   },
   "dependencies": {
     "rightscale": ">= 0.0.0"
   },
-  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
-  "providing": {
+  "suggestions": {
   },
   "license": "All rights reserved",
-  "maintainer": "YOUR_COMPANY_NAME",
-  "recommendations": {
+  "description": "Installs/Configures about_me",
+  "groupings": {
   },
   "attributes": {
+    "about_me/favorite/hobby": {
+      "recipes": [
+        "about_me::default"
+      ],
+      "type": "string",
+      "required": "required",
+      "calculated": false,
+      "description": "My favorite hobby.",
+      "choice": [
+
+      ],
+      "display_name": "Hobby"
+    }
   },
-  "conflicting": {
-  },
-  "name": "about_me",
-  "replacing": {
-  },
-  "version": "0.0.1",
-  "maintainer_email": "YOUR_EMAIL",
-  "recipes": {
-    "about_me::default": "Prints my first name and several of my favorite things as output."
-  },
-  "description": "Installs/Configures about_me"
+  "providing": {
+  }
 }
