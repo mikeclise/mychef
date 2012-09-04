@@ -1,0 +1,30 @@
+{
+  "recipes": {
+    "helloworld::default": "Prints hello world output"
+  },
+  "providing": {
+  },
+  "platforms": {
+  },
+  "maintainer_email": "mike.clise@precor.com",
+  "groupings": {
+  },
+  "attributes": {
+  },
+  "recommendations": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "replacing": {
+  },
+  "dependencies": {
+  },
+  "maintainer": "Precor",
+  "license": "All rights reserved",
+  "conflicting": {
+  },
+  "suggestions": {
+  },
+  "version": "0.0.1",
+  "description": "Installs/Configures helloworld",
+  "name": "helloworld"
+}
