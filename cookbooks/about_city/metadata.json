@@ -1,0 +1,72 @@
+{
+  "name": "about_city",
+  "version": "0.0.1",
+  "dependencies": {
+    "rightscale": ">= 0.0.0"
+  },
+  "providing": {
+  },
+  "groupings": {
+  },
+  "suggestions": {
+  },
+  "long_description": "Description\n===========\n\nRequirements\n============\n\nAttributes\n==========\n\nUsage\n=====\n\n",
+  "replacing": {
+  },
+  "conflicting": {
+  },
+  "maintainer": "Precor",
+  "description": "Installs/Configures about_city",
+  "recipes": {
+    "about_city::my_city": "Information about my city"
+  },
+  "attributes": {
+    "about_city/city_name": {
+      "calculated": false,
+      "display_name": "City Name",
+      "description": "The city where I currently live.",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "type": "string",
+      "required": "required",
+      "choice": [
+
+      ]
+    },
+    "about_city/temperature": {
+      "calculated": false,
+      "display_name": "Temperature",
+      "description": "Current temperature in the city",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "type": "string",
+      "required": "optional",
+      "choice": [
+
+      ]
+    },
+    "about_city/rain": {
+      "calculated": false,
+      "display_name": "Raining",
+      "description": "Is it raining? Yes or No",
+      "recipes": [
+        "about_city::my_city"
+      ],
+      "type": "string",
+      "default": "no",
+      "required": "recommended",
+      "choice": [
+        "yes",
+        "no"
+      ]
+    }
+  },
+  "maintainer_email": "mike.clise@precor.com",
+  "recommendations": {
+  },
+  "platforms": {
+  },
+  "license": "All rights reserved"
+}
