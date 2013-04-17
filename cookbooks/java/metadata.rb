@@ -17,3 +17,16 @@ recipe "java::oracle_i386", "Installs the 32-bit jvm without setting it as the d
 end
 
 depends "windows"
+
+attribute "java/install_flavor",
+  :display_name => "Install Flavor",
+  :description => "openJDK or oracle",
+  :required => "optional",
+  :recipes => ["java::default"]
+ 
+attribute "java/jdk_version",
+  :display_name => "JDK version",
+  :description => "6 or 7",
+  :required => "optional",
+  :recipes => ["java::default"]
+
