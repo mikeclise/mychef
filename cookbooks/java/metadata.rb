@@ -30,3 +30,8 @@ attribute "java/jdk_version",
   :required => "optional",
   :recipes => ["java::default"]
 
+attribute "java/oracle/accept_oracle_download_terms",
+  :display_name => "Accept Oracle java download terms",
+  :description => "true or false",
+  :required => "optional",
+  :recipes => ["java::default"]

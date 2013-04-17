@@ -1,3 +1,4 @@
+name             "about_city"
 maintainer       "Precor"
 maintainer_email "mike.clise@precor.com"
 license          "All rights reserved"
